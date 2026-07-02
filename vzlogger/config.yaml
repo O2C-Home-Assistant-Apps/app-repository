@@ -1,0 +1,22 @@
+---
+name: "vzlogger Add-on for Home Assistant"
+description: "vzlogger packaged to run as a Home Assistant Add-on"
+url: "https://gitlab.informatik.uni-bremen.de/home-assistant/addon-vzlogger"
+version: "0.0.34"
+slug: "vzlogger"
+init: false
+map:
+  - type: addon_config
+    read_only: false
+arch:
+  - aarch64
+  - amd64
+services:
+  - mqtt:want
+options:
+  device: null
+  log_level: debug
+schema:
+  device: device(subsystem=tty)
+  log_level: list(trace|debug|info|notice|warning|error|fatal)
+image: gitlab.informatik.uni-bremen.de:5005/home-assistant/addon-vzlogger/{arch}
