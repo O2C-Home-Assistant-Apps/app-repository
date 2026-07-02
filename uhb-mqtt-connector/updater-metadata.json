@@ -1,0 +1,7 @@
+{
+	"repository": "https://gitlab.informatik.uni-bremen.de/home-assistant/addon-uhb-mqtt-connector.git",
+	"files": {
+		"README.md": "README.md",
+		"config.yaml": "uhb-mqtt-connector/config.yaml"
+	}
+}
