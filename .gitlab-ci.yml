@@ -8,6 +8,7 @@ stages:
 
 update-job:
   stage: update-apps
+  image: ghcr.io/catthehacker/ubuntu:act-latest@sha256:c710431fbad9eb3bcb102d04e5ff74fbd0ce6e383f78afebfb3770a1a817fdf9
   script:
     - git config user.name "App auto updater"
     - git config user.email "hahelp@uni-bremen.de"
