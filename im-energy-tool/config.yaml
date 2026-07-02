@@ -1,7 +1,7 @@
 # Home Assistant Add-on Configuration
 name: "IM Energy Tool"
 description: "Energy management tool for Home Assistant with IM integration"
-version: "0.0.3"
+version: "0.0.4"
 slug: "im-energy-tool"
 url: "https://gitlab.informatik.uni-bremen.de/home-assistant/addon-im-energy-tool"
 image: "gitlab.informatik.uni-bremen.de:5005/home-assistant/addon-im-energy-tool/{arch}"
