@@ -1,0 +1,15 @@
+workflow:
+  rules: 
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    
+stages:
+  - update-apps
+
+update-job:
+  stage: update-apps
+  script:
+    - git config user.name "App auto updater"
+    - git config user.email "hahelp@uni-bremen.de"
+    - git remote set-url --push origin $CI_REPOSITORY_URL
+    - python .gitlab/ha-app-repo-updater.py
+    - git push origin HEAD:$CI_COMMIT_REF_NAME
