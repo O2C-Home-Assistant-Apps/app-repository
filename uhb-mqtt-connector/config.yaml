@@ -1,6 +1,6 @@
 name: "Uni Bremen MQTT Connector"
 description: "Datenübertragung per MQTT mit dateibasierter Konfiguration"
-version: "0.2.6"
+version: "0.3.0"
 slug: "uhb-mqtt-connector"
 init: false
 arch:
