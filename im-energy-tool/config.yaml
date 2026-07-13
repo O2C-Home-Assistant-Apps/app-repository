@@ -1,8 +1,8 @@
-# Home Assistant Add-on Configuration
-name: "IM Energy Tool"
-description: "Energy management tool for Home Assistant with IM integration"
-version: "0.0.5"
-slug: "im-energy-tool"
+# Home Assistant App Configuration
+name: "Living Energy"
+description: "Energy management app for Home Assistant"
+version: "0.0.6"
+slug: "living-energy"
 url: "https://gitlab.informatik.uni-bremen.de/home-assistant/addon-im-energy-tool"
 image: "gitlab.informatik.uni-bremen.de:5005/home-assistant/addon-im-energy-tool/{arch}"
 init: false
