@@ -1,7 +1,7 @@
 # Home Assistant App Configuration
 name: "Living Energy"
 description: "Energy management app for Home Assistant"
-version: "0.0.6"
+version: "0.0.7"
 slug: "living-energy"
 url: "https://gitlab.informatik.uni-bremen.de/home-assistant/addon-living-energy"
 image: "gitlab.informatik.uni-bremen.de:5005/home-assistant/addon-living-energy/{arch}"
