@@ -1,7 +1,0 @@
-{
-	"repository": "https://gitlab.informatik.uni-bremen.de/home-assistant/addon-im-energy-tool.git",
-	"files": {
-		"README.md": "living-energy/app-core/README.md",
-		"config.yaml": "living-energy/config.yaml"
-	}
-}
