@@ -167,7 +167,7 @@ async def process_app(app_dir, metadata: dict):
         if update_files(app_dir, metadata["files"]):
             await commit_changes(app_dir)
 
-        shutil.rmtree(TMP_REPO_FOLDER)
+    shutil.rmtree(TMP_REPO_FOLDER, ignore_errors=True)
 
 async def main():
     _logger.setLevel(logging.DEBUG)
