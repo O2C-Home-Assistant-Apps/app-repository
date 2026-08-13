@@ -44,7 +44,7 @@ Home Assistant to a configured MQTT broker.
 [vzlogger](https://github.com/volkszaehler/vzlogger) packaged as a 
 Home Assistant app.
 
-### [UHB MQTT Connector][https://gitlab.informatik.uni-bremen.de/home-assistant/addon-uhb-mqtt-connector]
+### [UHB MQTT Connector](https://gitlab.informatik.uni-bremen.de/home-assistant/addon-uhb-mqtt-connector)
 
 Backend used by Living Energy to transmit states collected by Home Assistant to
 a configured MQTT broker.
