@@ -37,8 +37,9 @@ Home Assistant to a configured MQTT broker.
 
 ### [vzlogger](https://gitlab.informatik.uni-bremen.de/home-assistant/addon-vzlogger)
 
-> [!caution] Disclaimer
+> [!CAUTION] Disclaimer
 > This App is not an official project of volkszaehler.org.
+> 
 > For help with configuring vzlogger go to the official documentation.
 
 [vzlogger](https://github.com/volkszaehler/vzlogger) packaged as a 
