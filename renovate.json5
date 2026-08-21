@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "postUpgradeTasks": {
+    "dataFileTemplate": "{\"branchName\":\"{{{branchName}}}\",\"upgrades\":[{{#each upgrades}}{\"depName\": \"{{{depName}}}\", \"currentVersion\": \"{{{currentVersion}}}\", \"newVersion\": \"{{{newVersion}}}\"}{{#unless @last}},{{/unless}}{{/each}}]}",
+    "executionMode": "branch",
+    "commands": [
+      "python -m fragcha renovate --data-file $RENOVATE_POST_UPGRADE_COMMAND_DATA_FILE"
+    ]
+  },
+  "extends": [
+    "config:recommended"
+  ]
+}
