@@ -1,8 +1,10 @@
 {
+	"strategy": "git-tag",
 	"repository": "https://gitlab.informatik.uni-bremen.de/home-assistant/addon-vzlogger.git",
 	"files": {
-		"README.md": "README.md",
+		"README.md": "vzlogger/README.md",
 		"DOCS.md": "vzlogger/DOCS.md",
-		"config.yaml": "vzlogger/config.yaml"
+		"config.yaml": "vzlogger/config.yaml",
+		"CHANGELOG.md": "CHANGELOG.md"
 	}
 }
