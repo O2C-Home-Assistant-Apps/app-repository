@@ -1,10 +1,10 @@
 {
-	"strategy": "git-tag",
-	"repository": "https://gitlab.informatik.uni-bremen.de/home-assistant/addon-uhb-mqtt-connector.git",
-	"files": {
-		"README.md": "uhb-mqtt-connector/README.md",
-		"config.yaml": "uhb-mqtt-connector/config.yaml",
-		"CHANGELOG.md": "CHANGELOG.md"
-	},
-	"synced_version": "0.3.2"
+    "strategy": "git-tag",
+    "repository": "https://gitlab.informatik.uni-bremen.de/home-assistant/addon-uhb-mqtt-connector.git",
+    "files": {
+        "README.md": "uhb-mqtt-connector/README.md",
+        "config.yaml": "uhb-mqtt-connector/config.yaml",
+        "CHANGELOG.md": "CHANGELOG.md"
+    },
+    "synced_version": "0.3.3"
 }

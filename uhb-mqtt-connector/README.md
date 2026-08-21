@@ -1,16 +1,6 @@
-# Uni Bremen MQTT Connector Home Assistant App
+# Home Assistant App: Uni Bremen MQTT Connector
 
 This Home Assistant App sends specified states collected by Home Assistant to a configured MQTT Broker. It is intended to collect data from demonstrators in research projects by the [working groug Optimization and Optimal Control](https://www.math.uni-bremen.de/zetem/cms/detail.php?id=4381&language=en). 
-
----
-
-## Installation
-
-1. Navigate to **Settings → Add-ons → Add-on Store** in your Home Assistant.
-2. Add this repository to your Home Assistant add-on store:
-   - Click the menu (three dots) → _Repositories_
-   - Add the repository URL of this project
-3. Find **Uni Bremen MQTT Connector** in the add-on list and install it.
 
 ---
 
