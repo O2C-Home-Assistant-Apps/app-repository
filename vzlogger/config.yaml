@@ -1,8 +1,8 @@
 ---
-name: "vzlogger Add-on for Home Assistant"
-description: "vzlogger packaged to run as a Home Assistant Add-on"
+name: "vzlogger App for Home Assistant"
+description: "vzlogger packaged to run as a Home Assistant App"
 url: "https://gitlab.informatik.uni-bremen.de/home-assistant/addon-vzlogger"
-version: "0.0.34"
+version: "0.1.0"
 slug: "vzlogger"
 init: false
 map:

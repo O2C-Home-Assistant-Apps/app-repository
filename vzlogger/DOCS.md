@@ -2,8 +2,8 @@
 
 ## Device Selection
 
-Before the first startup, you must **select the device** (e.g. `/dev/ttyUSB0`) in the add-on configuration.
-Without a device selected the Add-On can not be started, only a single device is passed through for security.
+Before the first startup, you must **select the device** (e.g. `/dev/ttyUSB0`) in the app configuration.
+Without a device selected the App can not be started, only a single device is passed through for security.
 
 ---
 
@@ -14,7 +14,7 @@ Without a device selected the Add-On can not be started, only a single device is
 - vzlogger will only start after a valid **`vzlogger.conf`** file exists in
   `/addon_configs/{REPO}_vzlogger/`.\*
 - On the **first startup**, an **`vzlogger.conf.example`** file is automatically created in the same directory. You can use it as a template to build your configuration.
-- You can rename or copy `vzlogger.conf.example` to `vzlogger.conf` if the [Mosquitto broker Add-On](https://github.com/home-assistant/addons/tree/master/mosquitto) is installed. This will result in random measurments being generated since the meter protocol is set to `random`.
+- You can rename or copy `vzlogger.conf.example` to `vzlogger.conf` if the [Mosquitto broker App](https://github.com/home-assistant/addons/tree/master/mosquitto) is installed. This will result in random measurments being generated since the meter protocol is set to `random`.
 
 ## \*{REPO} is a hash of the repository url. The directory will be automatically created on first startup.
 
@@ -22,8 +22,8 @@ Without a device selected the Add-On can not be started, only a single device is
 
 The `vzlogger.conf` supports limited templating for convenience:
 
-- **Device path**: Auto-filled from the selected device in the add-on configuration.
-- **MQTT settings**: If the Home Assistant MQTT Broker add-on is installed and active, the configuration template can automatically include correct broker connection details.
+- **Device path**: Auto-filled from the selected device in the app configuration.
+- **MQTT settings**: If the Home Assistant MQTT Broker app is installed and active, the configuration template can automatically include correct broker connection details.
 
 For a usage example, of all available placeholders, look at the [vzlogger.conf.example](rootfs/etc/vzlogger.conf.example).
 
@@ -31,7 +31,7 @@ For a usage example, of all available placeholders, look at the [vzlogger.conf.e
 
 ## Log Levels
 
-- **Container startup script log level**: Can be set via the add-on Configuration. This controls the verbosity of the bashio startup and shtudown scripts in the container.
+- **Container startup script log level**: Can be set via the app configuration. This controls the verbosity of the bashio startup and shtudown scripts in the container.
 - **vzlogger log level**: Is configured separately inside the `vzlogger.conf` file under the `verbosity` option. For information on available values look in the [official documentation](https://wiki.volkszaehler.org/software/controller/vzlogger/vzlogger_conf_parameter#verbosity)
 
 ---
