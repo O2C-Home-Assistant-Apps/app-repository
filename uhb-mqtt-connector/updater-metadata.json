@@ -6,5 +6,5 @@
         "config.yaml": "uhb-mqtt-connector/config.yaml",
         "CHANGELOG.md": "CHANGELOG.md"
     },
-    "synced_version": "0.3.4"
+    "synced_version": "0.3.5"
 }

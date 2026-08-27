@@ -1,6 +1,6 @@
 name: "Uni Bremen MQTT Connector"
 description: "Datenübertragung per MQTT mit dateibasierter Konfiguration"
-version: "0.3.4"
+version: "0.3.5"
 slug: "uhb-mqtt-connector"
 init: false
 arch:
@@ -10,4 +10,4 @@ homeassistant_api: true
 map:
   - type: addon_config
     read_only: true
-image: gitlab.informatik.uni-bremen.de:5005/home-assistant/addon-uhb-mqtt-connector/{arch}
+image: gitlab.informatik.uni-bremen.de:5005/home-assistant/addon-uhb-mqtt-connector/app-uhb-mqtt-connector

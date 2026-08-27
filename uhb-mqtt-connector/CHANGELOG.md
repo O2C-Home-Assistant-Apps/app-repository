@@ -1,3 +1,8 @@
+# 0.3.5
+## Internal changes
+- Switched to distributing single multi-arch image
+- Updated build system to 0.3.0
+***
 # 0.3.4
 ## Internal changes
 - Updated build system to work with standard docker build system
