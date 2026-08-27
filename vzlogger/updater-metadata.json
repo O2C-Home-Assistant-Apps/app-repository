@@ -7,5 +7,5 @@
         "config.yaml": "vzlogger/config.yaml",
         "CHANGELOG.md": "CHANGELOG.md"
     },
-    "synced_version": "0.1.0"
+    "synced_version": "0.1.1"
 }

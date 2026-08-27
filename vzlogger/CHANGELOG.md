@@ -1,3 +1,10 @@
+# 0.1.1
+## Internal changes
+- Switched to distributing single multi-arch image
+## Dependency changes
+- Updated home-assistant/gitlab-pipeline-components from 0.2.1 to 0.3.0
+- Moved from ghcr.io/hassio-addons/base to ghcr.io/home-assistant/base
+***
 # 0.1.0
 ## Features
 - Updated buildsystem to automatically generate new releases when a new vzlogger version is released

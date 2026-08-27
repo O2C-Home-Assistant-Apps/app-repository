@@ -2,7 +2,7 @@
 name: "vzlogger App for Home Assistant"
 description: "vzlogger packaged to run as a Home Assistant App"
 url: "https://gitlab.informatik.uni-bremen.de/home-assistant/addon-vzlogger"
-version: "0.1.0"
+version: "0.1.1"
 slug: "vzlogger"
 init: false
 map:
@@ -19,4 +19,4 @@ options:
 schema:
   device: device(subsystem=tty)
   log_level: list(trace|debug|info|notice|warning|error|fatal)
-image: gitlab.informatik.uni-bremen.de:5005/home-assistant/addon-vzlogger/{arch}
+image: gitlab.informatik.uni-bremen.de:5005/home-assistant/addon-vzlogger/ha-app-vzlogger
