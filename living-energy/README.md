@@ -35,7 +35,7 @@ they are also exposed as app options:
 | Option | Description |
 |---|---|
 | `weather_entity` | A `weather.*` entity (current conditions, temperature, humidity, wind). |
-| `power_entity` | A sensor with device class `power` (instantaneous consumption in W; negative = solar export). |
+| `power_entity` | A sensor with device class `power` (instantaneous consumption in W; negative = export to the grid). |
 | `energy_entity` | A cumulative `energy` sensor for grid consumption/import (kWh). |
 | `energy_export_entity` | Optional cumulative `energy` sensor for grid export (kWh). |
 | `cost_per_kwh` | Optional electricity price (€/kWh). Enables cost tiles on the dashboard. |
