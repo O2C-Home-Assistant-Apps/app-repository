@@ -1,9 +1,10 @@
 {
-	"strategy": "git-tag",
-	"repository": "https://gitlab.informatik.uni-bremen.de/home-assistant/addon-living-energy.git",
-	"files": {
-		"README.md": "living-energy/app-core/README.md",
-		"config.yaml": "living-energy/config.yaml",
-		"CHANGELOG.md": "CHANGELOG.md"
-	}
+    "strategy": "git-tag",
+    "repository": "https://gitlab.informatik.uni-bremen.de/home-assistant/addon-living-energy.git",
+    "files": {
+        "README.md": "living-energy/app-core/README.md",
+        "config.yaml": "living-energy/config.yaml",
+        "CHANGELOG.md": "CHANGELOG.md"
+    },
+    "synced_version": "0.1.0"
 }
