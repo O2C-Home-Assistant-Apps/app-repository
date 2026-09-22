@@ -1,3 +1,16 @@
+# 0.2.0
+## Features
+- Darstellung der Energiewalze wurde angepasst
+- Farbkontrast im Hellen Modus verbessert
+- Optimierung von Hoveringauswahlen
+- Verschiedene Optimierungen der Darstellung
+## Fixed bugs
+- Fehlerhafte Darstellung der Energiewalze im Hellen Modus behoben
+- Berechnung der Verbrauch seit Kachel behoben
+## Dependency updates
+- Updated vue-router to 5.3.1
+- Updated tailwindcss to 4.3.3
+***
 # 0.1.1
 ## Fixed bugs
 - Behebt ein Cachingproblem, welches das Updaten der App erschwerte.
