@@ -1,3 +1,10 @@
+# 0.2.1
+## Fixed bugs
+- Fehlerhafte Anzeige der Verbrauchsübersicht behoben
+- Akzentfarben angepasst
+- Rundungen und Einheiten angepasst
+- Energiewalze überarbeitet
+***
 # 0.2.0
 ## Features
 - Darstellung der Energiewalze wurde angepasst
