@@ -1,3 +1,10 @@
+# 0.2.2
+## Fixed bugs
+- Anzeigefehler im Menü für mobile Geräte behoben
+- Versprünge durch Berechnung halber Pixel bei manchen Bildschirmauflösungen behoben.
+- Berechnung des Jahresverbrauchs resistenter gemacht
+- Energiewalze aktuelle Zeit korrigiert
+***
 # 0.2.1
 ## Fixed bugs
 - Fehlerhafte Anzeige der Verbrauchsübersicht behoben
