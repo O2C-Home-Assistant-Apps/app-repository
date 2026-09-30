@@ -1,3 +1,9 @@
+# 0.2.3
+## Dependency updates
+- Updated vue to 3.5.43
+- Updated vue-i18n to 11.4.12
+- Updated vite to 8.3.1
+***
 # 0.2.2
 ## Fixed bugs
 - Anzeigefehler im Menü für mobile Geräte behoben
