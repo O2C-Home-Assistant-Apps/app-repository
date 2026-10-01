@@ -1,3 +1,18 @@
+# 0.3.0
+## Features
+- Neue Anordnung der Verbrauchsseite
+- TOPAS Logo hinzugefügt
+- Anzeige der Energiewalze überarbeitet
+- Farbverlauf in der Enerergiewalze hinzugefügt
+- Neue Anzeige 'Dein Tag im Vergleich'
+- Neugestaltung der Energiewalzenansicht
+## Fixed bugs
+- WebUI für alle Nutzer (nicht nur Admins) freigeschaltet
+- Einheiten und Rundung vereinheitlicht
+- Bessere Darstellung von Kosten
+- Verschiedene kleine Darstellungsbugs
+- Einstellungen öffnen und Schließen vereinfacht
+***
 # 0.2.3
 ## Dependency updates
 - Updated vue to 3.5.43
