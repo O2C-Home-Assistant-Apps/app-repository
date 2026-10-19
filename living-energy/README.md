@@ -1,4 +1,4 @@
-# Living Energy
+# Living-Energy
 
 A weather & energy dashboard for Home Assistant. Shows current weather
 conditions and live power/energy readings from your own HA entities, with
@@ -21,7 +21,7 @@ dashboard is fully usable without it. Delivery is handled by the bundled
    ```
    https://gitlab.informatik.uni-bremen.de/home-assistant/addon-living-energy
    ```
-4. Find **Living Energy** in the store and click **Install**.
+4. Find **Living-Energy** in the store and click **Install**.
 5. Start the app and open it from the sidebar (Ingress).
 
 > Running Home Assistant in a container instead of HA OS? See the
