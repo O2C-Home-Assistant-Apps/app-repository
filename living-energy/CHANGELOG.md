@@ -1,3 +1,23 @@
+# 0.6.0
+## Features
+- Wer einspeist, bekommt einen Hinweis, wenn in den letzten 24 Stunden gleichzeitig eingespeist und Strom bezogen wurde, mit dem Betrag, der sich durch Verschieben des Verbrauchs hätte sparen lassen (ab 20 ct)
+- Ist eine neue Version von Living-Energy verfügbar, erscheint ein Hinweis mit direktem Link zur Update-Seite in Home Assistant
+- Die Kachel „Dein Tag/Woche/Monat im Vergleich“ hat eine vierte Auswahl für einen eigenen Zeitraum. Rückblick, Vorschau und Vergleichsbasis lassen sich frei einstellen; die Vorschau erscheint als Prognoselinie im Diagramm
+- Abschlags-Check - in den Einstellungen lässt sich optional der Beginn des Abrechnungsjahres hinterlegen. Der Check betrachtet dann die zwölf Monate ab diesem Datum - bis heute gemessen, nur der Rest wird geschätzt. Ein bereits abgelaufener Zeitraum wird komplett aus Messwerten berechnet. Reichen die Zählerdaten nicht bis zum Startdatum zurück, wird wie bisher mit der Jahresschätzung gerechnet und das dazugesagt
+## Fixed bugs
+- Der Vorjahresvergleich der Jahresschätzung erscheint nur noch, wenn das Vorjahr vollständig erfasst ist, und vergleicht dieselben Tage beider Jahre
+- Die Versionsanzeige in den Einstellungen zeigt nach einem Update nicht mehr die alte Version aus dem Browser-Cache an
+- Tippfehler im Datenschutz-Kontakt der Einwilligungsseite korrigiert („Universität Bremen“)
+## Dependency updates
+- Updated vue to 3.5.44
+- Updated vue-i18n to 11.4.16
+- Updated vitest to 5.0.5
+- Updated postcss to 8.5.30
+- Updated node to 
+- Updated node
+## Internal changes
+- Feedback, MQTT-Einrichtung und Datenschutz-Kontakt verweisen jetzt einheitlich auf support@living-energy.eu
+***
 # 0.5.0
 ## Features
 - Wochenvergleich in der Monatsheatmap - Kalenderwochen lassen sich wie Tage als A und B auswählen und Tag für Tag nebeneinander vergleichen, mit Wochensumme und Abweichung in Prozent. Eine einzelne Woche wird wie bisher gegen den Schnitt der letzten Tage angezeigt
