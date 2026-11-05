@@ -1,3 +1,50 @@
+# 0.7.0
+## Features
+- „Dein Tag/Woche/Monat im Vergleich“ zeigt jetzt wie der eigene Zeitraum eine Prognoselinie bis zum Periodenende.
+- Der Ampelverlauf in „Dein Tag/Woche/Monat im Vergleich“ geht jetzt fließend von Grün über Gelb und Orange zu Rot über und wird bei größerer Abweichung kräftiger.
+- Auswahlen in der Ansicht „Verbrauch analysieren“ lassen sich mit Namen speichern (z. B. „Waschmaschine“). Gespeichert werden Zeitraum, Basis und die berechneten Werte zum Zeitpunkt des Speicherns – auch nachdem Home Assistant die fein aufgelösten Daten gelöscht hat.
+- Gespeicherte Auswahlen erscheinen als Liste in der Ansicht „Verbrauch analysieren“; sie lassen sich dort bearbeiten, umbenennen und löschen und sind im Diagramm als Band markiert.
+- Gespeicherte Auswahlen ab 10 Minuten aus den letzten 24 Stunden werden auf dem Live-Verbrauch (Energiewalze) markiert: Die Fläche zwischen gespeicherter Basis und Verbrauchskurve ist umrandet und schräg schraffiert. Steht eine Markierung vorne, erscheinen Name, Zeitraum, Verbrauch und Kosten in einer eigenen Zeile unter der aktuellen Leistung.
+- Gespeicherte Auswahlen lassen sich nachträglich bearbeiten: „Bearbeiten“ lädt sie ins Diagramm, Zeitraum, Basis, Name und Farbe können angepasst und als Änderung oder als neue Auswahl gespeichert werden. Die Werte werden dabei neu berechnet.
+- Jede Auswahl bekommt eine Farbe (Violett, Magenta, Türkis, Blau, Schwarz/Weiß). Sie wird vor dem Speichern gewählt – vorbelegt ist die erste noch unbenutzte – und lässt sich in der Liste über den Farbpunkt ändern.
+- Verbrauch analysieren: Über den neuen Button „Analysieren“ unten links auf dem Live-Verbrauch (Energiewalze; auf dem Handy nur als Symbol) öffnet sich der Leistungsverlauf in feiner Auflösung – standardmäßig die letzten 24 Stunden, wahlweise 6 h oder 1 h, und bis zu etwa 10 Tage zurückblätterbar.
+- In der Ansicht „Verbrauch analysieren“ lässt sich ein Zeitraum per Ziehen auswählen; angezeigt werden Netzbezug, Einspeisung und Kosten in diesem Zeitraum.
+- Um den Verbrauch einzelner Geräte zu isolieren, kann eine Basis abgezogen werden: Mittel aus Leistung vor Start und nach Ende, nächtliche Grundlast, Minimum im Zeitraum oder ein eigener Wert. Der Mehrverbrauch über der Basis wird mit Kosten, Durchschnitts- und Spitzenleistung ausgewiesen.
+- Die Kurve der Ansicht „Verbrauch analysieren“ verwendet dieselbe Farbskala wie die Energiewalze (Gelb bei 0 W über Orange bis Rot, Grün bis Blau bei Einspeisung).
+- Zeiträume ohne Messwerte werden in der Ansicht „Verbrauch analysieren“ als Nulllinie gezeichnet statt als Lücke; in die Berechnung gehen sie weiterhin nicht ein.
+- Die Ansicht „Verbrauch analysieren“ zeigt Verbrauch, Einspeisung und Kosten zusätzlich pro Stunde an.
+- Die Ansicht „Verbrauch analysieren“ springt beim Blättern und Zoomen nicht mehr – auch dann nicht, wenn kein Lastspitzen-Vorschlag gefunden wird: Der Dialog ist oben verankert und die Ergebniskacheln bleiben stehen (mit „–“, solange nichts gewählt ist).
+- Die 0-W-Linie ist im Diagramm der Ansicht „Verbrauch analysieren“ deutlich hervorgehoben.
+- Die Basis lässt sich direkt im Diagramm über einen Schieberegler am rechten Rand verschieben.
+- Die Auflösung der Ansicht „Verbrauch analysieren“ ist wählbar (Auto, Fein, 1 min, 5 min, 15 min); standardmäßig wird der Verlauf geglättet, damit er ruhiger und leichter lesbar ist.
+- Beim Blättern und Zoomen gleitet die Ansicht weich zum neuen Zeitraum; die Blätter-Buttons zeigen an, um wie viel sie verschieben.
+- Die Ansicht „Verbrauch analysieren“ schlägt automatisch einen Zeitraum um den größten Leistungsanstieg vor (Start vor dem Anstieg, Ende nach dem Abfall).
+- Der Live-Verbrauch (Energiewalze) zeigt den Verlauf jetzt in 10-Minuten-Durchschnitten statt in Stundenmitteln. Geräte, die kürzer als eine Stunde laufen, sind damit deutlich als eigener Ausschlag zu sehen, und gespeicherte Auswahlen werden auf der Walze genauer markiert.
+- Bei Einspeisung reicht die Skala der Energiewalze nach oben und unten nur noch so weit wie Bezug bzw. Einspeisung tatsächlich gehen, statt gespiegelt gleich weit. Die kleinere Seite behält mindestens ein Viertel der größeren, und die 0-Ebene ist kräftiger gezeichnet, damit sie erkennbar bleibt.
+- Der Einwilligungstext zur Datenübertragung wurde auf das Forschungsprojekt Living-Energy aktualisiert (u. a. TOPAS als beteiligtes Institut, Zugang zu den eigenen Daten, Regeln zur Weitergabe).
+- Nach der Zustimmung zur Datenübertragung lässt sich der Einwilligungstext unter Einstellungen → „Datenschutz & Datenübertragung“ über „Einwilligungstext ansehen“ jederzeit erneut lesen.
+- Neue Einstellung „Ansicht“ (Einstellungen → System): „Einstieg“ zeigt das Wichtigste, „Erweitert“ alle Werkzeuge. Die Wahl gilt pro Browser, voreingestellt ist „Einstieg“.
+- Infotexte im Einstiegsmodus wurden hinzugefügt.
+- Live-Verbrauch (Energiewalze): Nach dem Drehen von Hand oder einem Antippen bleibt die Walze 5 Sekunden stehen und läuft dann sanft wieder an. Sie bleibt dort stehen, wo sie losgelassen wird; nur wer sie im Loslassen anschiebt, gibt ihr Schwung.
+- Verbrauch analysieren: Die Farbauswahl ist eingeklappt und öffnet sich per Klick auf den Farbpunkt als kleines Menü; neben den fünf Farben lässt sich dort eine eigene Farbe wählen. Der Button heißt nur noch „Speichern“, damit auf dem Handy mehr Platz für den Namen bleibt.
+- Die Liste der gespeicherten Auswahlen ist eingeklappt (mit Anzahl) und öffnet sich per Klick oder nach dem Speichern; „Umbenennen“ entfällt, der Name lässt sich über „Bearbeiten“ ändern. Auf dem Handy sind „Bearbeiten“ und „Löschen“ Symbole.
+## Fixed bugs
+- Unmögliche Messwerte des Leistungssensors (z. B. kurzzeitig 10³⁰ W) werden jetzt ignoriert und verfälschen Verbrauch, Statistiken und Live-Anzeige nicht mehr.
+- Die Erklärung zum Monatskalender sprach vom „hellsten“ und „dunkelsten“ Feld – das stimmte nur im hellen Design. Jetzt heißt es „blassestes“ und „kräftigstes“ Feld.
+- Auf dem Handy wurde die Zeile zur gespeicherten Auswahl unter dem Live-Verbrauch abgeschnitten; Name und Werte stehen dort jetzt in zwei Zeilen.
+- Verbrauch analysieren: Lagen beide Auswahlgriffe übereinander (z. B. ganz links am Rand, auch nach einem Vorschlag), ließ sich die Auswahl nicht mehr verschieben. Jetzt entscheidet die Zugrichtung, welcher Griff bewegt wird, und die Griffe können sich beim Ziehen überholen.
+## Dependency updates
+- Updated vite to 8.3.5
+- Updated postcss to 8.5.32
+- Updated postcss to 8.5.31
+- Updated node to v26.13.0
+- Updated node to 26.13.0
+## Internal changes
+- Die Plausibilitätsprüfungen liegen jetzt eigenständig in core/checks.py (eine Funktion je Entitätsart); der Verlauf der Zähler für Bezug und Einspeisung läuft künftig ebenfalls durch eine Prüfung, die vorerst noch alle Werte durchlässt.
+- Neue Endpunkte /api/marks (GET, POST, PATCH, DELETE); die Auswahlen liegen in /data/load_marks.json neben app_config.json. PATCH ändert einzelne Felder (Name, Farbe, Zeitraum, Basis, Werte); das Ergebnis wird als ganze Auswahl geprüft.
+- Neuer Endpunkt /api/ha/power/samples liefert die vorzeichenbehaftete Leistung als zeitgewichtete Mittelwerte in festen Intervallen (10 s bis 5 min, max. 48 h je Abfrage); das Intervall ist per `step` wählbar und auf runde Uhrzeiten ausgerichtet.
+- Neuer Endpunkt /api/ha/power/recent: die letzten 24 Stunden der Netzleistung als zeitgewichtete 10-Minuten-Mittel, an runden Uhrzeiten ausgerichtet. /api/ha/power/hourly bleibt für die Insights unverändert.
+***
 # 0.6.0
 ## Features
 - Wer einspeist, bekommt einen Hinweis, wenn in den letzten 24 Stunden gleichzeitig eingespeist und Strom bezogen wurde, mit dem Betrag, der sich durch Verschieben des Verbrauchs hätte sparen lassen (ab 20 ct)
