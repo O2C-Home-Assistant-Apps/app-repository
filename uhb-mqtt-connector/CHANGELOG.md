@@ -1,3 +1,13 @@
+# 0.3.6
+## Dependency changes
+- Updated websockets to 17.4
+- Updated simplejson to 4.3.0
+- Updated pytz to 2026.6
+- Updated paho-mqtt to 2.2.0
+- Updated json5 to 0.17.3
+- Updated home-assistant/gitlab-pipeline-components to 0.3.1
+- Updated ghcr.io/hassio-addons/base-python to 20.0.1
+***
 # 0.3.5
 ## Internal changes
 - Switched to distributing single multi-arch image
