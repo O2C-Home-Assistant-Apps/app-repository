@@ -8,7 +8,7 @@ stages:
 
 update-job:
   stage: update-apps
-  image: ghcr.io/catthehacker/ubuntu:act-latest@sha256:62d572b92f9f32d3427b6d220ad1f9dca9c7b6ffad37d295425037dbff78abaf
+  image: ghcr.io/catthehacker/ubuntu:act-latest@sha256:beea02d9454a21c06de0104bb1f8c1542b88dd88f33022f9d36b52b48e022bd7
   before_script:
     - pip install --break-system-packages semver~=3.0.0
   script:
